@@ -97,7 +97,7 @@ jobs:
         ./master/SvtAv1EncApp -enc-mode 0 -i Chimera-Aerial_480x264_2997fps_10bit_420_150frames.y4m -n 3 -b $HOME/test-master-10bit-m0.ivf
     - name: Binary compare
       run: |
-        echo Comparing 8-bit M8: akiyo_cif.y4m  
+        echo Comparing 8-bit M8: akiyo_cif.y4m
         diff $HOME/test-pr-8bit-m8.ivf $HOME/test-master-8bit-m8.ivf
         echo Comparing 8-bit M0: akiyo_cif.y4m
         diff $HOME/test-pr-8bit-m0.ivf $HOME/test-master-8bit-m0.ivf
